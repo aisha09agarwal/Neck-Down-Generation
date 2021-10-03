@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application Form</title>
+    </head>
+    <style>
+        body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:lightskyblue;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: white;  
+}  
+  
+input[type=text], input[type=password], input[type=email], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=email]:focus , input[type=password]:focus {  
+  background-color: lightskyblue;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+    </style>
+    <body>  
+    <form class="application-form" action="application" method="post">  
+        <div class="container">  
+            <center>  <h1>Application Form</h1> </center>  
+            <hr>  
+            <div>
+            <label><b>Firstname :</b></label>   
+            <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+            <label><b>Middlename :</b></label>   
+            <input type="text" name="middlename" placeholder="Middlename" size="15"/>   
+            <label><b>Lastname :</b></label>    
+            <input type="text" name="lastname" placeholder="Lastname" size="15"required /> 
+            </div>  
+            <div>  
+                <label><b>Education Qualification :</b></label>   
+                <select>  
+                    <option value="Course" selected="true" disabled="disabled">Select</option>  
+                    <option value="BCA">BCA</option>  
+                    <option value="BBA">BBA</option>  
+                    <option value="B.Tech">B.Tech</option>  
+                    <option value="MBA">MBA</option>  
+                    <option value="MCA">MCA</option>  
+                    <option value="M.Tech">M.Tech</option>  
+                </select>  
+            </div> 
+            <div>  
+                <label><b>Application Field:</b></label>   
+                <select> 
+                    <option value="Course" selected="true" disabled="disabled">Select</option>
+                    <option value="Campus Recruiter">Campus Recruiter</option>  
+                    <option value="KPO">KPO</option>  
+                    <option value="BPO">BPO</option>  
+                    <option value="Software Development">Software Development</option> 
+                </select>  
+            </div> 
+            <div>  
+                <label><b>Gender :</b></label><br>  
+                <input type="radio" value="Male" name="gender" > Male   
+                <input type="radio" value="Female" name="gender"> Female   
+                <input type="radio" value="Other" name="gender"> Other  
+            </div>
+            <div>  
+                <label><b>Phone :</b></label>    
+                <input type="text" name="phone" placeholder="phone no." size="10"/ required> 
+            </div>
+            <div>
+                <label><b>Address :</b></label>  
+                <textarea cols="80" rows="5" value="address" required>  
+                </textarea> 
+            </div> 
+            <div>
+                <label for="email"><b>Email :</b></label>  
+                <input type="email" placeholder="Enter Email" name="email" required> 
+            </div> 
+            <div>
+                <label for="password"><b>Password :</b></label>  
+                <input type="password" placeholder="Enter Password" name="psw" required> 
+            </div> 
+            <div>
+                <label for="password-repeat"><b>Re-type Password :</b></label>  
+                <input type="password" placeholder="Retype Password" name="psw-repeat" required> 
+            </div> 
+            <div>
+                <label><b>Bio :</b></label>
+                <textarea  rows="5" cols="80" value="bio" required></textarea>
+            </div>
+            <div>
+                <label for="choose-file"><b>Upload Profile Picture :</b></label>
+                <input type="file" id="choose-file" size="80">
+            </div>
+            <div>
+                <label for="choose-file"><b>Upload Resume :</b></label>
+                <input type="file" id="choose-file" size="80">
+            </div>
+                <button type="submit" class="registerbtn">Register</button>    
+    </form>  
+    </body>  
+</html>  

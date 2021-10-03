@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABOUT US</title>
+    </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .header{
+            min-height:100vh;
+            width:100%;
+            position:relative;
+        }
+        nav{
+            background-color: teal;
+        }
+        nav img{
+            width:80px;
+            padding: 5px;
+        }
+        body{
+            background-color: #f1f1f1;
+            padding-bottom: 50px;
+        }
+        .body{
+            background: url("header-background.jpg") no-repeat left;
+            background-size: 55%;
+            background-color: #fdfdfd;
+            overflow: hidden;
+            padding: 100px 0;
+        }
+        .AboutUs{
+            width: 55%;
+            float: right;
+            background-color: #fdfdfd;
+            padding: 70px;
+            box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+        }
+
+        .AboutUs h1{
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        @media  screen and (max-width:1200px) {
+            .AboutUs{
+                padding: 80px;
+            }
+        }
+        @media  screen and (max-width:1000px) {
+            .body{
+                background-size: 100%;
+                padding: 100px 40px;
+            }
+            .AboutUs{
+                width: 100%;
+            }
+        }
+        @media  screen and (max-width:600px) {
+            .body{
+                padding: 0;
+            }
+            .AboutUs{
+                padding: 60px;
+            }
+        }
+        .Ourteam{
+            overflow: hidden;
+            width:80%;
+            margin:auto;
+            text-align: center;
+            padding:60px;
+            background-color: teal;
+        }
+        .Ourteam h1{
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .border
+        {
+            display:block;
+            margin:auto;
+            width: 80px;
+            height: 3px;
+            background: #3498d3;
+            margin-bottom: 40px;
+        }
+        .teamprofile{
+            margin-bottom: 40px;
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .teamprofile a{
+            display: inline-block;
+            margin:0 30px;
+            width:100px;
+            height:100px; 
+            overflow: hidden; 
+            border-radius: 50%; 
+        }
+        .teamprofile a img{
+            width: 100%;
+            filter:grayscale(100%);
+            transition:0.4s all;
+        }
+        .teamprofile a:hover > img{
+            filter : none;
+        }
+        .teamdetails{
+            width:600px;
+            margin:auto;
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+            height:0;
+            overflow: hidden;
+        }
+        .teamdetails:target{
+            height: auto;
+        }
+        .name{
+            display: block;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+        .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+        .Footer{
+    background: rgb(54, 54, 54);
+    margin-top:40px;
+}
+.Footer-upper{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 40px;
+}
+
+.Footer-col{
+    flex: 32%;
+    display: inline;
+    margin-bottom:5px;
+}
+
+.Footer-contact h3{
+    text-align: left;
+}
+.Footer p{
+    color: #fff3f3;
+    padding-top: 40px;
+    text-align: left;
+}
+
+.input-field{
+    width:32%;
+    display: flex;
+    width:200px;
+    height:40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    
+}
+
+.Footer-lower{
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color:white;
+}
+
+@media(max-width:700px){
+    .Footer-contact h3{
+        text-align: center;
+    }
+}
+    </style>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.jpg"></a>
+            </nav>
+            <div class="body">
+            <div class="AboutUs">
+                <h1>About Us</h1>
+                <p>We’re Neck Down Generation, a Placement & educational consultancy that loves to help, collaborate, and assist students.
+                    "We believe that Education gives you the Freedom to Rule the World."
+                    Chose the right Carrier path is very important because education is your attitude and it makes them able to meet their full potential and contribute to their society.
+                    We began our journey in 2020, it is just two men and an old motorcycle. In that Pandemic situation (COVID19) we find the number of unemployed people is increased day by day, we had decided to help people but not by the money, food, clothes but in a different way by the right carrier and job placement. And that day we build the company Neck Down Generation.
+                    Our vision is to help every individual student sincerely to find the best solutions for higher education.
+                    With years of experience in the field of college admission, we understand the pain points of our clients.
+                    To help you overcome these problems we have built collaborations with most of the top institutions for direct admission.
+                    As a Placement Consultancy, our vision is Employability enhancement.
+                    We understand the problems of employee and employer. We want to work as a bridge between them.
+                    Our mission is to "Choose the best from best". One day it will be the largest recruitment & education consultancy in the world.</p>
+            </div>
+            </div>
+        </section>
+        <hr style="color: black;">
+        <section class="Ourteam">
+            <h1>Our Team</h1>
+            <span class="border"></span>
+            <div class="teamprofile">
+                <a href="#td1"><img src="about-profile.png"></a>
+                <a href="#td2"><img src="about-profile.png"></a>
+                <a href="#td3"><img src="about-profile.png"></a>
+            </div>
+            <div class="teamdetails" id="td1">
+                <span class="name">Aisha Singh</span>
+                <span class="border"></span>
+                <p>
+                    We’re Neck Down Generation, a Placement &
+                     educational consultancy that loves to help
+                     , collaborate, and assist students.
+                </p>
+            </div>
+            <div class="teamdetails" id="td2">
+                <span class="name">Aisha Singh</span>
+                <span class="border"></span>
+                <p>
+                    Neck Down Generation, a Placement &
+                     educational consultancy that loves to help
+                     , collaborate, and assist students.
+                </p>
+            </div>
+            <div class="teamdetails" id="td3">
+                <span class="name">Aisha Singh</span>
+                <span class="border"></span>
+                <p>
+                    re Neck Down Generation, a Placement &
+                     educational consultancy that loves to help
+                     , collaborate, and assist students.
+                </p>
+            </div>
+        </section>
+        <!-----  Upper Footer starts ----->
+        <div class="Footer">
+            <section class="Footer-upper">
+    
+                <div class="row">
+                    <div class="Footer-col">
+                        <div class="Footer-contact">
+                            <h3>Contact Us</h3>
+                            <p>Neck Down Generation ,<br>
+                            Webel IT Park ,<br>
+                            Durgapur , West Bengal - 713208 .<br>
+                            Email : neckdowngeneration@gmail.com<br>
+                            Fb id : https://www.facebook.com/neckdowngeneration/<br>
+                            Contact No : +91-8918598980 / +91-6294244438</p>
+                        </div>
+                    </div>
+    
+                    <div class="Footer-col">
+                        <div class="contact-box">
+                            <form >
+                                <h3>Enquiry form</h3>
+                                <center><input type="text" class="input-field" placeholder="Enter your Name" required>
+                                <input type="text" class="input-field" placeholder="+91-9876543210" required>
+                                <input type="email" class="input-field" name="" id="" aria-describedby="emailHelpId" placeholder="abc@gmail.com" required>
+                                <textarea type="text" class="input-field textare" placeholder="Your message"></textarea>
+                                <button type="Submit" class="Enquiry-btn">Submit</button></center>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <div class="Footer-col">
+                        <h3>Photos</h3>
+                    </div>
+                </div>
+            </section>
+            </div>
+    
+            <!-----  Upper Footer ended  -->
+    
+    
+            
+            <!--Lower footer start -->
+            <section class="Footer-lower">
+                <span>© Copyrights 2018. All Rights Reserved.</span>
+            </section>
+            <!--lower footer end -->
+    </body>
+</html>
